@@ -14,6 +14,7 @@
 html{
     font-family: sans-serif;
     scroll-behavior: smooth;
+    /* animation-duration: 10s; */
 }
 
 body{
@@ -26,13 +27,11 @@ header
     position: fixed;
     width: 100%;
     top: 0;
-    
     nav{
         height: 90px;
         display: flex;
         justify-content: center;
         align-items: center;
-        
         a{
             color: white;
             margin: 25px;
@@ -42,10 +41,20 @@ header
     }
 }
 
+.footer{
+    background-color: var(--colorSecundario);
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-family: Avengeance Heroic Avenger;
+    font-size: 20px;
+   text-align: center;
+   padding: 10px;
+}
+
+
 main {
-
     margin-top: 162px;
-
     h1{
         margin: 62px 0 0 0;
         text-align: center;
@@ -55,22 +64,22 @@ main {
     }
 
 
-    .tarjetaIntroduccion{
+    .tarjetaIntroduccion, .tarjetaUnieron, .tarjetaCambio{
         width: 1000px;
         height: 304px;
         background-color: var(--colorTarjeta);
-        margin: 62px auto 25px auto;
+        margin: 25px auto 25px auto;
         padding: 30px;
         display: flex;
         gap: 23px;
         box-shadow: 5px 4px 6px 1px rgba(0, 0, 0, 0.4);
 
-        .tarjetaIntroduccion-contenido{
+        .tarjetaIntroduccion-contenido, .tarjetaUnieron-contenido, .tarjetaCambio-contenido{
             h2{
                 color: var(--colorPrimario);
                 font-size: 32px;
                 font-weight: lighter;
-                /*border-bottom: 4px solid var(--colorPrimario);*/
+                /* border-bottom: 4px solid var(--colorPrimario); */
                 margin-bottom: 12px;
                 line-height: 1.5;
             }
@@ -80,6 +89,7 @@ main {
                 height: 5px;
                 border: none;
                 border-radius: 5px;
+                margin-bottom: 12px;
             }
 
             p{
@@ -90,7 +100,7 @@ main {
             }
         }
 
-        .tarjetaIntroduccion-imagenes{
+        .tarjetaIntroduccion-imagenes, .tarjetaUnieron-imagen, .tarjetaCambio-imagen{
             img{
                 width: 240px;
                 border-radius: 5px;
@@ -101,20 +111,19 @@ main {
     
     .tarjetaHistoria{
         width: 1000px;
-        /*height: 900px;*/
+        /* height: 304px; */
         background-color: var(--colorTarjeta);
         margin: 25px auto 25px auto;
         padding: 30px;
         display: flex;
         gap: 23px;
         box-shadow: 5px 4px 6px 1px rgba(0, 0, 0, 0.4);
-        
 
         h2{
             color: var(--colorPrimario);
             font-size: 32px;
             font-weight: lighter;
-            /*border-bottom: 4px solid var(--colorPrimario);*/
+            /* border-bottom: 4px solid var(--colorPrimario); */
             margin-bottom: 12px;
             line-height: 1.5;
         }
@@ -124,15 +133,14 @@ main {
             height: 5px;
             border: none;
             border-radius: 5px;
-            margin-bottom: 25px;
+            margin-bottom: 12px;
         }
 
         .tarjetaHistoria-contenido{
+            /* columns: 2; */
             display: flex;
             flex-direction: column;
-            width: 80;
-
-
+            width: 80%;
             h3{
                 font-size: 32px;
                 color: var(--colorSecundario);
@@ -147,17 +155,16 @@ main {
             }
 
             .cajas{
-               columns: 2;
-               /*column-gap: 15px;*/
-
-            
+                columns: 2;
+                /* column-gap: 10px; */
+                margin-top: 12px;
                 .cajita{
-                    /*width: 260;*/
-                    /*height: 177px;*/
+                    /* width: 260px; */
+                    /* height: 177px; */
                     background-color: var(--colorTarjeta);
-                    box-shadow: 5px 4px 6px 1px rgb(0, 0, 0, 0.4);
+                    box-shadow: 5px 4px 6px 1px rgba(0, 0, 0, 0.4);
                     margin-bottom: 20px;
-                    padding: 20px;
+                    padding: 20px;                    
                 }
             }
         }
@@ -168,13 +175,11 @@ main {
             img{
                 width: 100%;
                 border-radius: 5px;
-                margin-top: 50px;
+                margin-top: 10px;
             }
         }
     }
-    
-    
 
-    
+
     
 }
